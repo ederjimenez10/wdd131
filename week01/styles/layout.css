@@ -1,11 +1,34 @@
 body {
     display: grid;
-    /* grid */
+    grid-template: 1fr 2fr 1fr / 1fr 1fr 1fr;
 }
 
-nav {
+nav,
+ul,
+li,
+a {
     display: flex;
     flex-wrap: wrap;
     background-color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+header,
+footer {
+    background-color: darkgrey;
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+main {
+    background-color: gray;
+    grid-column: 1 / 3;
+}
+
+aside {
+    background-color: white;
 }
