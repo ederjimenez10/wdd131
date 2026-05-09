@@ -37,13 +37,13 @@ body {
     display: grid;
     grid-template: 1fr 2fr 1fr / 1fr 1fr 1fr;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+    /* font-size: small; */
 }
 
 nav {
     background-color: #000;
-    display: flex;
     text-align: center;
+    padding: .75rem;
 }
 
 header,
@@ -51,6 +51,12 @@ footer {
     background-color: #333;
     grid-column: 1 / 4;
     color: #fff;
+    padding: 3.5rem auto 0;
+}
+
+h1,
+h2 {
+    padding: 1rem;
 }
 
 main {
@@ -60,7 +66,15 @@ main {
 
 
 .navigation {
+    list-style: none;
     background-color: #000;
     display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: space-around;
     text-align: center;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
 }
