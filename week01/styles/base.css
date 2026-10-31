@@ -9,9 +9,32 @@ body {
 }
 
 nav {
-    f
+    display: flex;
+    justify-content: space-evenly;
 }
 
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #099;
+    text-decoration: underline dashed #999;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+}
+
+/* .card {
+
+} */
 
 #course-title {
     display: block;
