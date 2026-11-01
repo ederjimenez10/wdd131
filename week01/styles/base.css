@@ -21,14 +21,11 @@ nav a {
     display: block;
     text-align: center;
     text-decoration: none;
-    /* padding: 1rem; */
     color: #fff;
 }
 
 nav a:hover {
-    padding: .1px;
-    font-size: large;
-    text-decoration: underline solid orangered;
+    text-decoration: underline solid #ff7518;
     color: #eee;
 }
 
@@ -36,22 +33,53 @@ main {
     max-width: 900px;
     margin: 0 auto;
     display: grid;
+    padding: .75rem;
+    text-align: center;
+    /* grid-template: 1fr 4fr / 2fr 1fr; */
 }
+
+
 
 section img {
     width: 150px;
     height: auto;
+    border: 1px #999 solid;
+    margin: 10px;
 }
 
-/* .card {
 
-} */
+footer {
+    background-color: #404;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    /* grid-column: 1 / 2; */
+}
+
+.card h2 {
+    background-color: #404;
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px;
+}
+
 
 #course-title {
     display: block;
     background-color: #404;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem;
     color: #fff;
-    font-weight: 100;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: small;
+    /* font-weight: 100; */
+
 }
