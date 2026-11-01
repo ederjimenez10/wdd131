@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -11,19 +13,23 @@ body {
 nav {
     display: flex;
     justify-content: space-evenly;
+    background-color: #333;
+    padding: 1rem;
 }
 
 nav a {
     display: block;
     text-align: center;
     text-decoration: none;
-    padding: 1rem;
+    /* padding: 1rem; */
     color: #fff;
 }
 
 nav a:hover {
-    color: #099;
-    text-decoration: underline dashed #999;
+    padding: .1px;
+    font-size: large;
+    text-decoration: underline solid orangered;
+    color: #eee;
 }
 
 main {
@@ -32,10 +38,20 @@ main {
     display: grid;
 }
 
+section img {
+    width: 150px;
+    height: auto;
+}
+
 /* .card {
 
 } */
 
 #course-title {
     display: block;
+    background-color: #404;
+    text-align: center;
+    padding: 1.5rem;
+    color: #fff;
+    font-weight: 100;
 }
