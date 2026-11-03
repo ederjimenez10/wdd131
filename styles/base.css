@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+header {
+    margin: 0 auto;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
