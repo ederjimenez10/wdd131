@@ -37,6 +37,10 @@ main {
     gap: .5rem;
 }
 
+header span {
+    display: block;
+}
+
 main h1 {
     grid-column: 1 / 3;
 }
