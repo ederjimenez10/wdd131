@@ -2,13 +2,32 @@ const input = document.querySelector("#favchap");
 const button = document.querySelector("button");
 const list = document.querySelector("#list");
 
-const li = document.createElement("li");
-const deleteButton = document.createElement("button");
 
-li.textContent = input.value;
-deleteButton.textContent = "❌";
-deleteButton.setAttribute("aria-label", "Remove");
-deleteButton.setAttribute("id", "close-button");
 
-li.append(deleteButton);
-list.append(li);
+button.addEventListener("click", function () {
+    if (input.value.trim() !== "") {
+        console.log("You cannot enter an empty chapter.");
+        input.focus();
+    } else {
+        const li = document.createElement("li");
+        const deleteButton = document.createElement("button");
+
+        li.textContent = input.value;
+        deleteButton.textContent = "❌";
+        deleteButton.setAttribute("aria-label", "Remove");
+        deleteButton.setAttribute("id", "close-button");
+
+        li.append(deleteButton);
+        list.append(li);
+
+        deleteButton.addEventListener("click", function () {
+            list.removeChild(li);
+            input.focus();
+        });
+
+        input.value = "";
+        input.focus();
+
+    }
+});
+
