@@ -25,7 +25,7 @@ button.addEventListener("click", function () {
         input.value = "";
         input.focus();
     } else {
-        console.log("You cannot enter an empty chapter.");
+        // console.log("You cannot enter an empty chapter.");
         input.focus();
     }
 });
