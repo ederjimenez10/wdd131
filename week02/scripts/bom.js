@@ -6,9 +6,6 @@ const list = document.querySelector("#list");
 
 button.addEventListener("click", function () {
     if (input.value.trim() !== "") {
-        console.log("You cannot enter an empty chapter.");
-        input.focus();
-    } else {
         const li = document.createElement("li");
         const deleteButton = document.createElement("button");
 
@@ -27,7 +24,9 @@ button.addEventListener("click", function () {
 
         input.value = "";
         input.focus();
-
+    } else {
+        console.log("You cannot enter an empty chapter.");
+        input.focus();
     }
 });
 
