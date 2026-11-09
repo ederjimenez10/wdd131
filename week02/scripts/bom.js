@@ -30,3 +30,5 @@ button.addEventListener("click", function () {
     }
 });
 
+// It would be AMAZING to allow new entries through pressing the "Enter" key for heavy keyboard users like me. lol
+// ^^^ Maybe a loop to check what the string result is? There may be a more efficient way.
