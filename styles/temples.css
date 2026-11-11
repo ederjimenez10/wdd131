@@ -1,3 +1,10 @@
+:root {
+    --heading-font: "Libre Baskerville", serif;
+    --body-font: "Open Sans", sans-serif;
+    --primary-color: goldenrod;
+    --accent-color: mediumturquoise;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,5 +13,4 @@
 
 body {
     background-color: ivory;
-    
 }
