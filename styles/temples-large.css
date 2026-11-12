@@ -14,6 +14,7 @@
     .navigation a {
         color: #fff;
         border: none;
+        display: block;
     }
 
     .navigation a:hover {
@@ -24,5 +25,7 @@
         text-decoration: underline solid var(--primary-color);
     }
 
-
+    #menu {
+        display: none;
+    }
 }

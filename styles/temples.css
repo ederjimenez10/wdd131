@@ -42,17 +42,18 @@ main h1 {
     padding: 1rem;
 }
 
+footer {
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
 
 .navigation {
     margin: 0 auto;
-}
-
-.navigation li {
     list-style: none;
 }
 
 .navigation a {
-    display: block;
+    display: none;
     padding: 1rem;
     margin: 0 1rem;
     text-align: center;
@@ -78,9 +79,37 @@ main h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     grid-gap: 15px;
+    padding: 1rem;
 }
 
 .grid-container img {
     width: 250px;
     height: auto;
+}
+
+.open a {
+    display: block;
+}
+
+#lastModified {
+    color: #111;
+    font-size: small;
+}
+
+#menu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.75rem;
+    border: 0;
+    background: none;
+    color: #000;
+}
+
+#menu::before {
+    content: "≣";
+}
+
+#menu.open::before {
+    content: "⨉";
 }
