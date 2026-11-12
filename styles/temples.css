@@ -28,10 +28,13 @@ header p {
     padding: 2rem;
     font-size: xx-large;
     color: darkgoldenrod;
+    text-shadow: 0 0 1rem #fff;
 }
 
 header nav {
     max-width: 1000px;
+    display: flex;
+    /* Why does the audit requires me to include the header nav as a flexbox item if my ul.navigation which contains the li>a is already a flex item? */
 }
 
 main {
