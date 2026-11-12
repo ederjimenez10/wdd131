@@ -13,4 +13,64 @@
 
 body {
     background-color: ivory;
+    font-family: var(--body-font);
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header p {
+    font-family: var(--heading-font);
+    padding: 2rem;
+    font-size: xx-large;
+    color: darkgoldenrod;
+}
+
+header nav {
+    max-width: 1000px;
+}
+
+main {
+    max-width: 850px;
+    display: grid;
+}
+
+main h1 {
+    padding: 1rem;
+}
+
+
+
+.navigation {
+    margin: 0 auto;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: #111;
+    border: 1px solid var(--primary-color);
+    border-radius: .5rem;
+}
+
+.navigation a:hover {
+    background-color: var(--primary-color);
+    color: ivory;
+    text-shadow: 0 0 1rem ivory;
+    box-shadow: 0 0 1rem #111;
+}
+
+.active {
+    text-shadow: 0 0 .5rem var(--primary-color), 1px 1px 2px ivory, 1px 1px 2px #111;
+    text-decoration: underline double var(--accent-color);
+    box-shadow: 0 0 1rem #111;
 }
