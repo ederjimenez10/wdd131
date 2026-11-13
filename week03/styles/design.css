@@ -29,11 +29,13 @@ h1 {
 
 main {
     display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 h2 {
     color: navy;
-    text-align: center;
+    text-align: left;
+    grid-column: 1 / 3;
 }
 
 article p {
@@ -41,8 +43,9 @@ article p {
 }
 
 .callout {
-    color: #777;
+    color: #eeeeee;
     background-color: #702963;
+    padding: 1rem;
 }
 
 footer {
