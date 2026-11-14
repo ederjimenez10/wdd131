@@ -29,7 +29,8 @@ h1 {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    grid-template-columns: 3fr 1fr;
 }
 
 h2 {
@@ -42,15 +43,27 @@ article p {
     text-align: justify;
 }
 
-.callout {
-    color: #eeeeee;
-    background-color: #702963;
-    padding: 1rem;
-}
-
 footer {
     margin-top: 1rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     font-size: smaller;
-    text-align: right;
+    text-align: left;
+    padding: 10px;
+
+}
+
+.banner {
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: rgb(230 243 254 / 1);
+    font-weight: 700;
+    word-break: break-word;
+    text-align: center;
+}
+
+.callout {
+    color: #eeeeee;
+    background-color: #702963;
+    padding: 1rem;
+    grid-column: 1 / 3;
 }
