@@ -1,7 +1,7 @@
 :root {
     --heading-font: "Libre Baskerville", serif;
     --body-font: "Open Sans", sans-serif;
-    --primary-color: goldenrod;
+    --primary-color: #daa520;
     --accent-color: mediumturquoise;
 }
 
@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: ivory;
+    background-color: #fffff0;
     font-family: var(--body-font);
 }
 
@@ -27,8 +27,8 @@ header p {
     font-family: var(--heading-font);
     padding: 2rem;
     font-size: xx-large;
-    color: darkgoldenrod;
-    text-shadow: 0 0 1rem #fff;
+    color: #111111;
+    text-shadow: 0 0 1rem #ffffff;
 }
 
 header nav {
@@ -60,22 +60,22 @@ footer {
     padding: 1rem;
     margin: 0 1rem;
     text-align: center;
-    color: #111;
+    color: #111111;
     border: 1px solid var(--primary-color);
     border-radius: .5rem;
 }
 
 .navigation a:hover {
     background-color: var(--primary-color);
-    color: ivory;
-    text-shadow: 0 0 1rem ivory;
-    box-shadow: 0 0 1rem #111;
+    color: fffff0;
+    text-shadow: 0 0 1rem fffff0;
+    box-shadow: 0 0 1rem #111111;
 }
 
 .active {
     text-shadow: 0 0 .5rem var(--primary-color), 1px 1px 2px ivory, 1px 1px 2px #111;
     text-decoration: underline double var(--accent-color);
-    box-shadow: 0 0 1rem #111;
+    box-shadow: 0 0 1rem #111111;
 }
 
 .grid-container {
@@ -95,7 +95,7 @@ footer {
 }
 
 #lastModified {
-    color: #111;
+    color: #111111;
     font-size: small;
 }
 
@@ -106,7 +106,7 @@ footer {
     font-size: 2.75rem;
     border: 0;
     background: none;
-    color: #000;
+    color: #000000;
 }
 
 #menu::before {
