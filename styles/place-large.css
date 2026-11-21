@@ -1,1 +1,39 @@
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+    main {
+        position: relative;
+    }
+
+    .hero img {
+        display: block;
+        height: 538px;
+        width: 100%;
+    }
+
+    .information {
+        padding: 0;
+    }
+
+    /* .information h2 */
+
+    .data {
+        border: 2px solid var(--accent-color);
+        border-radius: 5px;
+        background-color: var(--background-color);
+        opacity: .85;
+        position: absolute;
+        bottom: 1.5rem;
+        left: 1.5rem;
+        padding: .25rem;
+    }
+
+    .weather {
+        border: 2px solid var(--accent-color);
+        border-radius: 5px;
+        background-color: var(--background-color);
+        opacity: .85;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        padding: .25rem;
+    }
+}

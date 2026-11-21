@@ -28,10 +28,8 @@ header h1 {
     font-family: var(--heading-font);
     text-align: center;
     padding: 2rem;
-    text-shadow: 2px 2px var(--accent-color), -.5px -.5px var(--footer-color);
+    text-shadow: -.5px -.5px var(--background-color), 0 0 5px var(--background-color), 1.5px 1.5px var(--accent-color), -.5px -.5px var(--footer-color);
 }
-
-/* main {} */
 
 footer {
     color: white;
@@ -42,24 +40,18 @@ footer {
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 575px;
     object-fit: cover;
 }
 
 .information {
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
-    display: grid;
-    gap: 1.5rem;
 }
 
 .information h2 {
     padding: 0.5rem;
     text-shadow: 1.5px 1.5px var(--accent-color), -.5px -.5px var(--header-color);
-}
-
-.information section {
-    display: grid;
 }
 
 .information ul {
