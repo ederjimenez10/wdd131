@@ -4,48 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Country Page</title>
+    <title>WDD 131 - Place Page</title>
     <meta name="description"
         content="My week 3 country page assignment for the WDD 131 Dynamic Web Fundamentals course.">
     <meta name="author" description="Eder Jiménez R.">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Place Title</h1>
+        <h1>New Orleans</h1>
     </header>
     <main>
         <div class="hero">
             <picture>
-                <source media="(min-width: 750px)" srcset="images/new-orleans-large.webp">
+                <source media="(min-width: 600px)" srcset="images/new-orleans-large.webp">
                 <img src="images/new-orleans.webp"
                     alt="Vertical picture of New Orleans, Louisiana, from Bourbon Street after sunset with a partly cloudy weather.">
             </picture>
         </div>
-        <div>
-            <section>
+        <div class="information">
+            <section class="data">
                 <h2>Data</h2>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Area: 906,10 sq km</li>
+                    <li>Population: 362,154</li>
+                    <li>Language: English</li>
+                    <li>Currency: United States Dollar</li>
+                    <li>Time Zone: UTC-6 / UTC-5</li>
+                    <li>Area Code: 504</li>
+                    <li>ZIP Code: 70112-70131</li>
                 </ul>
             </section>
-            <section>
+            <section class="weather">
                 <h2>Weather</h2>
-                <img src="" alt="">
+                <picture>
+
+                    <img src="images/partly-cloudy-weather.svg" alt="Partly cloudy day weather icon.">
+                    <!-- 🌤️ -->
+                </picture>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Temperature: 21.38 °C</li>
+                    <li>Conditions: Partly Cloudy</li>
+                    <li>Wind: 12.87 kph </li>
                 </ul>
             </section>
         </div>

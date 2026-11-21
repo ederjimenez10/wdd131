@@ -1,0 +1,76 @@
+:root {
+    --header-color: red;
+    --footer-color: navy;
+    --background-color: white;
+    --accent-color: darkgoldenrod;
+    --heading-font: "Cinzel", "Cormorant Garamond", serif;
+    --regular-font: "Montserrat", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--regular-font);
+    color: black;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0 auto;
+    background-color: var(--header-color);
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 2rem;
+    text-shadow: 2px 2px var(--accent-color), -.5px -.5px var(--footer-color);
+}
+
+/* main {} */
+
+footer {
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--footer-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.information {
+    padding: 1rem;
+    text-align: center;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.information h2 {
+    padding: 0.5rem;
+    text-shadow: 1.5px 1.5px var(--accent-color), -.5px -.5px var(--header-color);
+}
+
+.information section {
+    display: grid;
+}
+
+.information ul {
+    list-style: none;
+}
+
+.weather p {
+    font-size: xx-large;
+}
+
+.weather img {
+    width: 3rem;
+    height: auto;
+}
