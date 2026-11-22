@@ -14,7 +14,7 @@ const calculateWindChill = function (T, V) {
     return (35.74 + 0.6215(T) - 35.75(V ** 0.16) + 0.4275(T(V ** 0.16)));
 };
 
-if (temperature <= 50) and(windSpeed > 3) {
+if (temperature <= 50 && windSpeed > 3) {
     calculateWindChill(temperature, windSpeed);
     // windChill.innerHTML = `${calculateWindChill}`;
     document.querySelector("#wind-chill").innerHTML = calculateWindChill(temperature, windSpeed);
