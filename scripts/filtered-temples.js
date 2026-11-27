@@ -105,10 +105,10 @@ function displayTempleCards() {
         let image = document.createElement("img");
 
         title.textContent = temple.templeName;
-        location.innerHTML = `<span class="data">Location:</span> ${temple.location}>`;
+        location.innerHTML = `<span class="data">Location:</span> ${temple.location}`;
         dedicated.innerHTML = `<span class="data">Dedicated:</span> ${temple.dedicated}`;
         area.innerHTML = `<span class="data">Area:</span> ${temple.area} sq ft`;
-        image.setAttribute("srce", temple.imageUrl);
+        image.setAttribute("src", temple.imageUrl);
         image.setAttribute("alt", `${temple.templeName} Temple`);
         image.setAttribute("loading", "lazy");
 
