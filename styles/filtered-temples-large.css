@@ -1,0 +1,31 @@
+@media (min-width: 650px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #111;
+    }
+
+    .navigation a {
+        color: #fff;
+        border: none;
+        display: block;
+    }
+
+    .navigation a:hover {
+        background-color: ivory;
+        color: #111;
+        box-shadow: 0 0 1rem ivory;
+        border-radius: 0%;
+        text-decoration: underline solid var(--primary-color);
+    }
+
+    #menu {
+        display: none;
+    }
+}

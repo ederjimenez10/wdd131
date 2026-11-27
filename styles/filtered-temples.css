@@ -1,0 +1,118 @@
+:root {
+    --heading-font: "Libre Baskerville", serif;
+    --body-font: "Open Sans", sans-serif;
+    --primary-color: #daa520;
+    --accent-color: mediumturquoise;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: ivory;
+    font-family: var(--body-font);
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header p {
+    font-family: var(--heading-font);
+    padding: 2rem;
+    font-size: xx-large;
+    color: #111111;
+    text-shadow: 0 0 1rem #ffffff;
+}
+
+header nav {
+    max-width: 1000px;
+    display: flex;
+    /* Why does the audit requires me to include the header nav as a flexbox item if my ul.navigation which contains the li>a is already a flex item? */
+}
+
+main {
+    max-width: 850px;
+}
+
+main h1 {
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+.navigation {
+    margin: 0 auto;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    margin: 0 1rem;
+    text-align: center;
+    color: #111111;
+    border: 1px solid var(--primary-color);
+    border-radius: .5rem;
+}
+
+.navigation a:hover {
+    background-color: var(--primary-color);
+    color: ivory;
+    text-shadow: 0 0 1rem ivory;
+    box-shadow: 0 0 1rem #111111;
+}
+
+.active {
+    text-shadow: 0 0 .5rem var(--primary-color), 1px 1px 2px ivory, 1px 1px 2px #111;
+    text-decoration: underline double var(--accent-color);
+    box-shadow: 0 0 1rem #111111;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    grid-gap: 15px;
+    padding: 1rem;
+}
+
+.grid-container img {
+    width: 250px;
+    height: auto;
+}
+
+.open a {
+    display: block;
+}
+
+#lastModified {
+    color: #111111;
+    font-size: small;
+}
+
+#menu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.75rem;
+    border: 0;
+    background: none;
+    color: #000000;
+}
+
+#menu::before {
+    content: "≣";
+}
+
+#menu.open::before {
+    content: "⨉";
+}
