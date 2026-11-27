@@ -83,7 +83,7 @@ const temples = [
         dedicated: "2002, April, 28",
         area: "16498",
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/monterrey-mexico/400x400/monterrey-mexico-temple-lds-126690-wallpaper.jpg"
-    }
+    },
     {
         templeName: "Jordan River Utah",
         location: "South Jordan, Utah, United States",
