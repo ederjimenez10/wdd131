@@ -95,16 +95,36 @@ const temples = [
 
 displayTempleCards(temples);
 
-const oldTemplesAnchor = querySelector(".old");
-const newTemplesAnchor = querySelector(".new");
-const largeTemplesAnchor = querySelector(".large");
-const smallTemplesAnchor = querySelector(".small");
+const homeAnchor = document.querySelector(".active")
+const oldTemplesAnchor = document.querySelector(".old");
+const newTemplesAnchor = document.querySelector(".new");
+const largeTemplesAnchor = document.querySelector(".large");
+const smallTemplesAnchor = document.querySelector(".small");
 
 oldTemplesAnchor.addEventListener("click", () => {
-    // const year = temples.dedicated.split(",");
-    let oldTemples = temples.filter(temple => temple.dedicated.includes("19"));
+    let oldTemples = temples.filter(temple => temple.dedicated.includes("18"));
     displayTempleCards(oldTemples);
-})
+});
+
+newTemplesAnchor.addEventListener("click", () => {
+    let newTemples = temples.filter(temple => temple.dedicated.includes("20"));
+    displayTempleCards(newTemples);
+});
+
+largeTemplesAnchor.addEventListener("click", () => {
+    let largeTemples = temples.filter(temple => parseInt(temple.area) > 90000);
+    displayTempleCards(largeTemples);
+});
+
+smallTemplesAnchor.addEventListener("click", () => {
+    let smallTemples = temples.filter(temple => parseInt(temple.area) < 10000);
+    displayTempleCards(smallTemples);
+});
+
+homeAnchor.addEventListener("click", () => {
+    displayTempleCards(temples);
+});
+
 
 
 function displayTempleCards(filteredTemples) {
