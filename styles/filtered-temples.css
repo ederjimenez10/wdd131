@@ -1,8 +1,8 @@
 :root {
     --heading-font: "Libre Baskerville", serif;
     --body-font: "Open Sans", sans-serif;
-    --primary-color: #daa520;
-    --accent-color: mediumturquoise;
+    --primary-color: oklch(75.16% 0.1469 83.99);
+    --accent-color: oklch(78.68% 0.1162 191.56);
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: ivory;
+    background-color: azure;
     font-family: var(--body-font);
 }
 
@@ -33,8 +33,6 @@ header p {
 
 header nav {
     max-width: 1000px;
-    display: flex;
-    /* Why does the audit requires me to include the header nav as a flexbox item if my ul.navigation which contains the li>a is already a flex item? */
 }
 
 main {
@@ -50,7 +48,7 @@ footer {
     background-color: var(--primary-color);
 }
 
-.navigation {
+nav .navigation {
     margin: 0 auto;
     list-style: none;
 }
@@ -87,7 +85,19 @@ footer {
 
 .grid-container img {
     width: 250px;
-    height: auto;
+    height: 175px;
+    object-fit: cover;
+    box-shadow: 0 0 .25rem #111111;
+    margin: 10px auto;
+}
+
+.grid-container section {
+    background-color: var(--primary-color);
+    border: thin solid #111111;
+}
+
+section p {
+    font-size: .75rem;
 }
 
 .open a {

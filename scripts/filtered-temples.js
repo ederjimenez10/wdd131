@@ -89,7 +89,7 @@ const temples = [
         location: "South Jordan, Utah, United States",
         dedicated: "1981, November, 16",
         area: "148236",
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/400x250/CWD_f5579d41-7344-4498-a589-4017ba5fcc91.jpg"
+        imageUrl: "https://www.churchofjesuschrist.org/imgs/87cb982259d1103385e7d2a0e07f41a0954eb4f8/full/500%2C/0/default"
     }
 ];
 

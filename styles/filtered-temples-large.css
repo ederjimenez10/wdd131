@@ -5,7 +5,7 @@
         align-items: center;
     }
 
-    .navigation {
+    nav .navigation {
         display: flex;
         justify-content: space-evenly;
         background-color: #111;
