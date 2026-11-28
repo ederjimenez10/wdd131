@@ -8,19 +8,19 @@
     nav .navigation {
         display: flex;
         justify-content: space-evenly;
-        background-color: #111;
+        background-color: black;
     }
 
     .navigation a {
-        color: #fff;
+        color: white;
         border: none;
         display: block;
     }
 
     .navigation a:hover {
-        background-color: ivory;
-        color: #111;
-        box-shadow: 0 0 1rem ivory;
+        background-color: azure;
+        color: black;
+        box-shadow: 0 0 1rem azure;
         border-radius: 0%;
         text-decoration: underline solid var(--primary-color);
     }

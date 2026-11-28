@@ -93,10 +93,23 @@ const temples = [
     }
 ];
 
-displayTempleCards();
+displayTempleCards(temples);
 
-function displayTempleCards() {
-    temples.forEach((temple) => {
+const oldTemplesAnchor = querySelector(".old");
+const newTemplesAnchor = querySelector(".new");
+const largeTemplesAnchor = querySelector(".large");
+const smallTemplesAnchor = querySelector(".small");
+
+oldTemplesAnchor.addEventListener("click", () => {
+    // const year = temples.dedicated.split(",");
+    let oldTemples = temples.filter(temple => temple.dedicated.includes("19"));
+    displayTempleCards(oldTemples);
+})
+
+
+function displayTempleCards(filteredTemples) {
+    document.querySelector(".grid-container").innerHTML = "";
+    filteredTemples.forEach((temple) => {
         let templeCard = document.createElement("section");
         let title = document.createElement("h2");
         let location = document.createElement("p");

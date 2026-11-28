@@ -1,8 +1,8 @@
 :root {
     --heading-font: "Libre Baskerville", serif;
     --body-font: "Open Sans", sans-serif;
-    --primary-color: oklch(75.16% 0.1469 83.99);
-    --accent-color: oklch(78.68% 0.1162 191.56);
+    --primary-color: goldenrod;
+    --accent-color: mediumturquoise;
 }
 
 * {
@@ -27,8 +27,8 @@ header p {
     font-family: var(--heading-font);
     padding: 2rem;
     font-size: xx-large;
-    color: #111111;
-    text-shadow: 0 0 1rem #ffffff;
+    color: black;
+    text-shadow: 0 0 1rem white;
 }
 
 header nav {
@@ -58,22 +58,22 @@ nav .navigation {
     padding: 1rem;
     margin: 0 1rem;
     text-align: center;
-    color: #111111;
+    color: black;
     border: 1px solid var(--primary-color);
     border-radius: .5rem;
 }
 
 .navigation a:hover {
     background-color: var(--primary-color);
-    color: ivory;
-    text-shadow: 0 0 1rem ivory;
-    box-shadow: 0 0 1rem #111111;
+    color: azure;
+    text-shadow: 0 0 1rem azure;
+    box-shadow: 0 0 1rem black;
 }
 
 .active {
-    text-shadow: 0 0 .5rem var(--primary-color), 1px 1px 2px ivory, 1px 1px 2px #111;
+    text-shadow: 0 0 .5rem var(--primary-color), 1px 1px 2px azure, 1px 1px 2px black;
     text-decoration: underline double var(--accent-color);
-    box-shadow: 0 0 1rem #111111;
+    box-shadow: 0 0 1rem black;
 }
 
 .grid-container {
@@ -87,13 +87,13 @@ nav .navigation {
     width: 250px;
     height: 175px;
     object-fit: cover;
-    box-shadow: 0 0 .25rem #111111;
+    box-shadow: 0 0 .25rem black;
     margin: 10px auto;
 }
 
 .grid-container section {
     background-color: var(--primary-color);
-    border: thin solid #111111;
+    border: thin solid black;
 }
 
 section p {
@@ -105,7 +105,7 @@ section p {
 }
 
 #lastModified {
-    color: #111111;
+    color: black;
     font-size: small;
 }
 
@@ -116,7 +116,7 @@ section p {
     font-size: 2.75rem;
     border: 0;
     background: none;
-    color: #000000;
+    color: black;
 }
 
 #menu::before {
